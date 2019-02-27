@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    android2:layout_width="match_parent"
+    android2:layout_height="match_parent"
+    android2:background="@drawable/background4"
+    android2:orientation="vertical">
+    <EditText
+        android2:layout_width="match_parent"
+        android2:layout_height="wrap_content"
+        android2:inputType="text"
+        android2:ems="10"
+        android2:id="@+id/signup_input_name"
+        android2:layout_weight="1"
+        android2:hint="Name"/>
+    <EditText
+        android2:layout_width="match_parent"
+        android2:layout_height="wrap_content"
+        android2:inputType="textEmailAddress"
+        android2:ems="10"
+        android2:id="@+id/signup_input_email"
+        android2:layout_weight="1"
+        android2:hint="Email"/>
+    <EditText
+        android2:id="@+id/signup_input_password"
+        android2:layout_width="match_parent"
+        android2:layout_height="wrap_content"
+        android2:ems="10"
+        android2:inputType="textPassword"
+        android2:hint="Enter Password" />
+
+    <EditText
+        android2:id="@+id/signup_input_age"
+        android2:layout_width="match_parent"
+        android2:layout_height="wrap_content"
+        android2:ems="10"
+        android2:hint="Enter Age"/>
+
+    <RelativeLayout
+        android2:layout_width="match_parent"
+        android2:layout_height="wrap_content">
+        <TextView
+            android2:id="@+id/gender_textview"
+            android2:paddingRight="15dp"
+            android2:layout_width="wrap_content"
+            android2:layout_height="wrap_content"
+            android2:text="Gender"
+            android2:textSize="20dp"
+            />
+        <RadioGroup
+            android2:id="@+id/gender_radio_group"
+            android2:layout_width="wrap_content"
+            android2:layout_height="wrap_content"
+            android2:layout_toRightOf="@+id/gender_textview"
+            android2:orientation="horizontal">
+            <RadioButton
+                android2:id="@+id/male_radio_btn"
+                android2:layout_width="wrap_content"
+                android2:layout_height="wrap_content"
+                android2:text="Male"
+                android2:checked="true"
+                />
+            <RadioButton
+                android2:id="@+id/female_radio_btn"
+                android2:layout_width="wrap_content"
+                android2:layout_height="wrap_content"
+                android2:text = "Female"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android2:id="@+id/btn_signup"
+        android2:layout_width="fill_parent"
+        android2:layout_height="wrap_content"
+        android2:text="Signup"
+        android2:background="@color/colorPrimary"
+        android2:layout_marginTop="40dp"
+        android2:textColor="@android:color/black"/>
+    <Button
+        android2:id="@+id/btn_link_login"
+        android2:layout_width="fill_parent"
+        android2:layout_height="wrap_content"
+        android2:text="Login"
+        android2:background="@color/colorPrimary"
+        android2:layout_marginTop="3dp"
+        android2:textColor="@android:color/black"/>
+</LinearLayout>
+
